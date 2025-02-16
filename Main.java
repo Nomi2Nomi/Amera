@@ -1,4 +1,4 @@
-]public class Main {
+public class Main {
     public static void main(String[] args) {
         product shoes1 = new product(001, "Mary Janes blue", "Shoes", "36.50$", "New Winter Collection", "url");
         product shoes2 = new product(002, "Mary Janes black", "Shoes", "38.50$", "New Winter Collection", "url2");
