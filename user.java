@@ -1,5 +1,4 @@
 public class user {
-    private int id;
     private String name;
     private String surname;
     private String email;
@@ -7,8 +6,7 @@ public class user {
     private cart cart;
 
     //Constructor to initialize a new User object
-    public user(int id, String name, String surname, String email, String phone) {
-        this.id = id;
+    public user( String name, String surname, String email, String phone) {
         this.name = name;
         this.surname = surname;
         this.email = email;
@@ -17,9 +15,9 @@ public class user {
     }
 
     //Returns the needed data
-    public int getId() {
-        return id;
-    }
+    //public int getId() {
+       // return id;
+    //}
     public String getName() {
         return name;
     }

@@ -8,7 +8,7 @@ public class product {
     private String imageUrl;
 
     //Constructor to initialize a new Product object
-    public product(int id, String name, String category, double price, String description, int quantity, String imageUrl) {
+    public product( int id, String name, String category, double price, String description, int quantity, String imageUrl) {
         this.id = id;
         this.name = name;
         this.category = category;
@@ -44,6 +44,6 @@ public class product {
     //Returns a string representation of the product.
     @Override  //this method overrides the default toString() method from the Object class.
     public String toString() {
-        return id + ": " + name + " " + category + " " + price + " " + description + " " + quantity + " " + imageUrl;
+        return  name + " " + category + " " + price + " " + description + " " + quantity + " " + imageUrl;
     }
 }

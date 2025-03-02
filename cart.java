@@ -1,29 +1,54 @@
 import java.util.List;
 import java.util.ArrayList;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.ResultSet;
+
 public class cart {
     private List<product> products;
     public cart() {  //Constructor for the cart class
         this.products = new ArrayList<>();
     }
+    //add product to the users cart
+    public static void addProductToCart(int productId, int userId) {
+        String sql = "INSERT INTO cart (user_id, product_id) VALUES (?, ?)";
 
-    public void addProduct(product Product){
-        // Add the provided product to the list of products.
-        products.add(Product);
-        System.out.println(Product.getName() + " added to cart.");
+        try (Connection con = DatabaseConnection.getConnection();
+             PreparedStatement preparedStatement = con.prepareStatement(sql)) {
+            preparedStatement.setInt(1, userId);
+            preparedStatement.setInt(2, productId);
+            preparedStatement.executeUpdate();
+            System.out.println("Product added to cart.");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
     //Displays all products currently in the cart
-    public void showCart(){
-        // Check if the cart is empty.
-        if(products.size()==0) {
-            System.out.println("No products added to cart.");
-        }
-        else {
-                System.out.println("Your Cart: ");
-            // Iterate through each product in the list and print its details.
-                for(product p : products) {
-                    System.out.println(p);
+    public static void showCart(int userId) {
+        String sql = "SELECT p.product_id, p.name, p.price FROM cart c " +
+                "JOIN products p ON c.product_id = p.product_id " +
+                "WHERE c.user_id = ?";
+
+        try (Connection con = DatabaseConnection.getConnection();
+             PreparedStatement stmt = con.prepareStatement(sql)) {
+            stmt.setInt(1, userId);
+            ResultSet resultSet = stmt.executeQuery();
+
+            if (!resultSet.isBeforeFirst()) { // Checks if ResultSet is empty
+                System.out.println("No products added to cart.");
+            } else {
+                System.out.println("Your Cart:");
+                while (resultSet.next()) {
+                    int productId = resultSet.getInt("product_id");
+                    String name = resultSet.getString("name");
+                    double price = resultSet.getDouble("price");
+                    System.out.println("ID: " + productId + ", Name: " + name + ", Price: $" + price);
                 }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
     }
 
