@@ -202,6 +202,3 @@ classDiagram
     Product "1" --> "1" Category : belongs to
     Admin "1" --> "*" Product : manages
     Admin "1" --> "*" Order : manages
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MDkyMDEyXX0=
--->
