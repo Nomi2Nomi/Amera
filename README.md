@@ -86,7 +86,7 @@ java -jar build/libs/Amera-0.0.1-SNAPSHOT.jar`
 Check out Amera App UML diagram
 (To view this diagram, open this file in StackEdit or paste it into [https://mermaid.live](https://mermaid.live))
 
-![UML diagram](file:///C:/Users/present/OneDrive/%D0%98%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F/Screenshots/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-04-14%20034154.png)
+![UML diagram](https://sun9-54.userapi.com/impg/4tGBFHILmnDA3_VQ7I78JPpyfr0QtuHqJz3qHQ/TJTX7126k_Q.jpg?size=582x690&quality=95&sign=aafe612c260de6eceb822a19830350a1&type=album)
 ```mermaid
 classDiagram
     class User {
@@ -206,5 +206,6 @@ classDiagram
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUyNzMyMjcxLC0xNzQ2Mjg2MDY5XX0=
+eyJoaXN0b3J5IjpbLTU4MjQ0Mzc4MCw1NTI3MzIyNzEsLTE3ND
+YyODYwNjldfQ==
 -->
