@@ -86,7 +86,6 @@ java -jar build/libs/Amera-0.0.1-SNAPSHOT.jar`
 Check out Amera App UML diagram
 (To view this diagram, open this file in StackEdit or paste it into [https://mermaid.live](https://mermaid.live))
 
-![UML diagram](https://sun9-54.userapi.com/impg/4tGBFHILmnDA3_VQ7I78JPpyfr0QtuHqJz3qHQ/TJTX7126k_Q.jpg?size=582x690&quality=95&sign=aafe612c260de6eceb822a19830350a1&type=album)
 ```mermaid
 classDiagram
     class User {
@@ -203,3 +202,6 @@ classDiagram
     Product "1" --> "1" Category : belongs to
     Admin "1" --> "*" Product : manages
     Admin "1" --> "*" Order : manages
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTc4MDkyMDEyXX0=
+-->
