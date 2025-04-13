@@ -85,6 +85,8 @@ java -jar build/libs/Amera-0.0.1-SNAPSHOT.jar`
 ## UML diagram
 Check out Amera App UML diagram
 (To view this diagram, open this file in StackEdit or paste it into [https://mermaid.live](https://mermaid.live))
+
+
 ```mermaid
 classDiagram
     class User {
@@ -204,6 +206,5 @@ classDiagram
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Mjc4OTY4NDIsLTE3NDYyODYwNjldfQ
-==
+eyJoaXN0b3J5IjpbNzY4Mjg4MDI2LC0xNzQ2Mjg2MDY5XX0=
 -->
