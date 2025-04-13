@@ -84,6 +84,7 @@ java -jar build/libs/Amera-0.0.1-SNAPSHOT.jar`
 
 ## UML diagram
 Check out Amera App UML diagram
+
 ```mermaid
 classDiagram
     class User {
@@ -111,7 +112,7 @@ classDiagram
     }
 
     class Cart {
-        - List~CartItem~ items
+        - List<CartItem> items
         + addItem(Product, int quantity)
         + removeItem(Product)
         + calculateTotal()
@@ -127,7 +128,7 @@ classDiagram
     class Order {
         - int id
         - User customer
-        - List~OrderItem~ items
+        - List<OrderItem> items
         - double totalAmount
         - String status
         - Payment payment
@@ -163,7 +164,7 @@ classDiagram
     class Category {
         - int id
         - String name
-        - List~Product~ products
+        - List<Product> products
     }
 
     class Review {
@@ -201,7 +202,8 @@ classDiagram
     Admin "1" --> "*" Product : manages
     Admin "1" --> "*" Order : manages
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDYyODYwNjksLTE3NDYyODYwNjldfQ
+eyJoaXN0b3J5IjpbLTE2MDc2MTIyNzUsLTE3NDYyODYwNjldfQ
 ==
 -->
