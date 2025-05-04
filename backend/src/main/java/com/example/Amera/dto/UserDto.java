@@ -6,6 +6,7 @@ public class UserDto {
     private String phone;
     private String email;
     private String password;
+    private String roles;
 
     // Геттеры и сеттеры
 
@@ -35,6 +36,12 @@ public class UserDto {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+    public String getRoles(String roles) {
+    	return roles;
+    }
+    public void setRoles(String roles) {
+    	this.roles=roles;
     }
 }
 

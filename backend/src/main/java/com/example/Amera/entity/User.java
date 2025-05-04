@@ -1,7 +1,9 @@
 package com.example.Amera.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
+@Data
 @Entity
 @Table(name = "users")  // Заменили "user" на "users"
 public class User {
@@ -13,11 +15,17 @@ public class User {
     private String name;
     private String surname;
     private String phone;
+    @Column(unique = true)
     private String email;
     private String password;
-
+    private String roles;
+    
     // Геттеры и сеттеры
 
+    public String getRoles() {
+    	return roles;
+    }
+    
     public Long getId() {
     	return id;
     }
