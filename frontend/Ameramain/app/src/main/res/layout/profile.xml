@@ -1,0 +1,98 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/white">
+
+    <ImageView android:id="@+id/backButton" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginStart="19dp" android:layout_marginTop="40dp" android:src="@drawable/button" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:fontFamily="@font/poppins_bold" android:text="Account" android:textColor="@android:color/black" android:textSize="18sp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView android:id="@+id/bell" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginStart="380dp" android:layout_marginTop="44dp" android:layout_marginEnd="21dp" android:src="@drawable/bell" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/bell"/>
+    <ImageView android:id="@+id/line2" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginStart="19dp" android:layout_marginTop="40dp" android:src="@drawable/button" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="342dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="340dp"
+        android:backgroundTint="#F44336"
+        android:text="Logout"
+        android:textSize="16dp"
+        app:cornerRadius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/helpcenter"
+        android:layout_width="26dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="232dp"
+        android:src="@drawable/headphones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="24dp"
+        android:background="#646464"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="204dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="232dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Help Center"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="144dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="My Details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/details"
+        android:layout_width="26dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="144dp"
+        android:src="@drawable/details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/details" />
+
+    <View android:id="@+id/view5" android:layout_width="430dp" android:layout_height="1dp" android:background="#646464" app:layout_constraintEnd_toEndOf="parent" tools:layout_editor_absoluteY="111dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@+id/bottomNavigationView" android:layout_width="415dp" android:layout_height="71dp" android:background="#FFFFFFFF" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <View android:id="@+id/view4" android:layout_width="match_parent" android:layout_height="1dp" android:background="#0D0D0D"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25">
+                <ImageView android:id="@+id/homebtn" android:layout_width="38dp" android:layout_height="31dp" android:layout_marginTop="7dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/frame"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25">
+                <ImageView android:id="@+id/favbtn" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="7dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/heart__2_"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25">
+                <View android:id="@+id/view2" android:layout_width="350dp" android:layout_height="1dp" android:layout_marginEnd="28dp" android:background="#646464" app:layout_constraintEnd_toEndOf="parent" tools:layout_editor_absoluteY="181dp"/>
+                <ImageView android:id="@+id/searchbtn" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="7dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/search"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25">
+                <ImageView android:id="@+id/cartbtn" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="7dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/cart"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.25">
+                <ImageView android:id="@+id/userbtn" android:layout_width="33dp" android:layout_height="33dp" android:layout_marginTop="7dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/userblack"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>
